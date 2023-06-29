@@ -6,7 +6,7 @@ if [ $# -ne 1 ]; then
 fi
 
 cantidad_imagenes=$1
-archivo_nombres="nombres.txt"
+archivo_nombres="imagen.txt"
 
 
 for ((i=1; i<=$cantidad_imagenes; i++)); do
