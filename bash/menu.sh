@@ -13,16 +13,16 @@ menu() {
     select opcion in "${opciones[@]}"; do
         case $opcion in
             "Comprimir")
-                ejecutar_archivo "../comprimir/comprimir.sh"
+                ejecutar_archivo "../script/comprimir.sh"
                 ;;
             "Descargar")
-                ejecutar_archivo "../descargar/descargar.sh"
+                ejecutar_archivo "../script/descargar.sh"
                 ;;
             "Generador")
-                ejecutar_archivo "../generador/generador.sh"
+                ejecutar_archivo "../script/generador.sh"
                 ;;
             "Procesar")
-                ejecutar_archivo "../procesar/procesar.sh"
+                ejecutar_archivo "../script/procesar.sh"
                 ;;
             "Salir")
                 echo "Saliendo del programa."
