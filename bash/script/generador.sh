@@ -25,7 +25,7 @@ for ((i=1; i<=$cantidad_imagenes; i++)); do
   nombre_archivo=$(echo $nombre_persona | tr -d ' ' | tr '[:upper:]' '[:lower:]')
 
   # Descargamos la imagen con el nombre generando anteriormente
-  wget -O "$nombre_archivo.jpg" "https://thispersondoesnotexist.com/image"
+  wget -O "$nombre_archivo.jpg" "https://thispersondoesnotexist.com"
   sleep 1
 done
 
