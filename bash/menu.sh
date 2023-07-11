@@ -2,7 +2,7 @@
 
 PS3='Escriba opción: '
 menu() {
-    opciones=("comprimir" "descargar" "generador" "procesar" "salir")
+    opciones=("comprimir" "descomprimir" "generador" "procesar" "salir")
 
     echo "Seleccione una opción:"
     select opcion in "${opciones[@]}"; do

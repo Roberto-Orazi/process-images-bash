@@ -1,11 +1,11 @@
 #!/bin/env bash
 
 if [ $# -ne 1 ]; then
-  echo "Uso: generar.sh <cantidad_imagenes>"
-  exit 1
+  echo "Ingrese un número:"
+  read numero
 fi
 
-cantidad_imagenes=$1
+cantidad_imagenes=$numero
 archivo_nombres="dict.csv"
 
 # Descargamos la lista de nombres
