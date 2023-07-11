@@ -9,10 +9,10 @@ cantidad_imagenes=$numero
 archivo_nombres="dict.csv"
 
 # Descargamos la lista de nombres
-wget -O $archivo_nombres "https://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv"
+wget -O $archivo_nombres "http://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv"
 
 # Leemos los nombres
-nombres=$(cut -d',' -f2 $archivo_nombres)
+nombres=$(cut -d',' -f1 $archivo_nombres)
 
 # Convertimos la lista a array
 IFS=$'\n' read -d '' -r -a nombres_array <<< "$nombres"
