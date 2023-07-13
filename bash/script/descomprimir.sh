@@ -1,4 +1,5 @@
 #/!bin/bash
+#
 #Aca hacemos un if para verificar que se ingresen dos archivos como argumentos
 if [ $# -ne 2 ]; then
   echo "Error: Debes proporcionar dos archivos como argumentos."

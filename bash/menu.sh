@@ -10,6 +10,12 @@ menu() {
             if [ $REPLY -eq 5 ]; then
                 echo "Saliendo del programa."
                 exit 0
+            elif [ $REPLY -eq 2 ]; then
+                echo "Ingrese el nombre del archivo comprimido"
+                read compressed_file
+                echo "Ingrese el nombre del archivo checksum"
+                read checksum_file
+                ./script/$opcion.sh $compressed_file $checksum_file
             else
                 ./script/$opcion.sh
             fi
