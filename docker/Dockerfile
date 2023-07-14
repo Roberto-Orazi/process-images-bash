@@ -1,5 +1,11 @@
 FROM ubuntu:20.04
 
+#Datos del autor
+LABEL author="Roberto Orazi" mail="robervgg@gmail.com"
+
+#Variables de entorno
+ENV container docker
+
 # Instalamos las dependencias
 RUN apt-get update && apt-get install -y \
     curl \
