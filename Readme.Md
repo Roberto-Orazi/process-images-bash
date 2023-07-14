@@ -19,3 +19,7 @@ programacion. <br>
 - Uso de contenedores
 - Generacion de documentacion
 
+# Steps for usage
+
+- docker build . -t <name>:<version>
+- docker run -it <name>:<version>
