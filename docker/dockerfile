@@ -7,10 +7,14 @@ LABEL author="Roberto Orazi" mail="robervgg@gmail.com"
 ENV container docker
 
 # Instalamos las dependencias
-RUN apt-get update && apt-get install -y \
-    curl \
-    imagemagick \
-    zip
+RUN apt-get update
+RUN apt-get install -y curl
+RUN apt-get install -y imagemagick
+RUN apt-get install -y zip
+#RUN apt-get update && apt-get install -y \
+#    curl \
+#    imagemagick \
+#    zip
 
 # Metemos los scripts al contenedor
 COPY generar.sh ../bash/script/
@@ -21,11 +25,11 @@ COPY menu.sh ../bash/script/
 
 
 # Le damos permiso de ejecucion a los scripts
-RUN chmod +x /generar.sh
-RUN chmod +x /descomprimir.sh
-RUN chmod +x /procesar.sh
-RUN chmod +x /comprimir.sh
-RUN chmod +x /menu.sh
+RUN chmod +x /bash/script/generar.sh
+RUN chmod +x /bash/script/descomprimir.sh
+RUN chmod +x /bash/script/procesar.sh
+RUN chmod +x /bash/script/comprimir.sh
+RUN chmod +x /bash/script/menu.sh
 
 # Configuramos el punto de entrada, en este caso el menush que es el que ejecuta todos los scripts
-ENTRYPOINT [ "bash", "/app/bash/menu.sh"]
+ENTRYPOINT [ "bash", "/bash/menu.sh"]
