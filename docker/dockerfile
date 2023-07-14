@@ -21,7 +21,7 @@ COPY generar.sh ../bash/script/
 COPY descomprimir.sh ../bash/script/
 COPY procesar.sh ../bash/script/
 COPY comprimir.sh ../bash/script/
-COPY menu.sh ../bash/script/
+COPY menu.sh ../bash/
 
 
 # Le damos permiso de ejecucion a los scripts
@@ -29,7 +29,7 @@ RUN chmod +x /bash/script/generar.sh
 RUN chmod +x /bash/script/descomprimir.sh
 RUN chmod +x /bash/script/procesar.sh
 RUN chmod +x /bash/script/comprimir.sh
-RUN chmod +x /bash/script/menu.sh
+RUN chmod +x /bash/menu.sh
 
 # Configuramos el punto de entrada, en este caso el menush que es el que ejecuta todos los scripts
 ENTRYPOINT [ "bash", "/bash/menu.sh"]
