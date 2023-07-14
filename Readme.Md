@@ -1,23 +1,22 @@
 # Entorno de programacion 2023 TUIA
 <br>
-Este repositorio se creo con el fin de crear el proyecto para el trabajo practico de la materia de entorno de
-programacion. <br>
+This repository was created with the purpose of creating the project for the practical work of the matter environment
+programming. <br>
 
-## Las tareas a completar son las siguientes:
+## Las tareas a The tasks to complete are the following: son las siguientes:
 
-- Diseñar y escribir un programa para procesar un lote de imagenes, y tiene 3 partes:
+- Design and write a program to process a batch of images, and it has 3 parts:
 
-  1. Se debe elegir si descargas la imagenes o las generas via servicio web
-  2. Solo transformar las imagenes de personas.
-  3. Generar archivo comprimido del las imagenes procesadas.
+  1. You must choose if you download the images or generate them via web service
+  2. Only transform the images of people.
+  3. Generate compressed file of the processed images.
 
 
-## Lenguajes y metodos a utilizar:
+## Languages & methods for this repo:
 
-- Programacion en bash
-- Manejo de control de versiones(git)
-- Uso de contenedores
-- Generacion de documentacion
+- Bash scripting
+- Use of git
+- Use of docker containers
 
 # Steps for usage
 
