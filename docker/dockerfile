@@ -13,11 +13,11 @@ RUN apt-get update && apt-get install -y \
     zip
 
 # Metemos los scripts al contenedor
-COPY generar.sh /
-COPY descomprimir.sh /
-COPY procesar.sh /
-COPY comprimir.sh /
-COPY menu.sh /
+COPY generar.sh /generar.sh
+COPY descomprimir.sh /descomprimir.sh
+COPY procesar.sh /procesar.sh
+COPY comprimir.sh /comprimir.sh
+COPY menu.sh /menu.sh
 
 
 # Le damos permiso de ejecucion a los scripts
