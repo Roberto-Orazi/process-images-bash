@@ -21,5 +21,5 @@ programacion. <br>
 
 # Steps for usage
 
-- docker build . -t <name>:<version>
-- docker run -it <name>:<version>
+- `docker build . -t <name>:<version>`
+- `docker run -it <name>:<version>`
