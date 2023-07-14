@@ -19,6 +19,7 @@ COPY procesar.sh /
 COPY comprimir.sh /
 COPY menu.sh /
 
+
 # Le damos permiso de ejecucion a los scripts
 RUN chmod +x /generar.sh
 RUN chmod +x /descomprimir.sh
@@ -27,4 +28,4 @@ RUN chmod +x /comprimir.sh
 RUN chmod +x /menu.sh
 
 # Configuramos el punto de entrada, en este caso el menush que es el que ejecuta todos los scripts
-CMD ["/menu.sh"]
+ENTRYPOINT [ "bash", "/app/bash/menu.sh"]
