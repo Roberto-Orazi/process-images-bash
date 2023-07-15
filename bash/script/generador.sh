@@ -23,6 +23,7 @@ for ((i=1; i<=$cantidad_imagenes; i++)); do
 
   # Eliminamos los espacios y los convertimos a minusculas
   nombre_archivo=$(echo $nombre_persona | tr -d ' ' | tr '[:upper:]' '[:lower:]')
+  #Los tr son de translate y lo que hace es cambiar un string, se usan 2 argumentos
 
   # Descargamos la imagen con el nombre generando anteriormente
   wget -O "$nombre_archivo.jpg" "https://thispersondoesnotexist.com"
