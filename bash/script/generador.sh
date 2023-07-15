@@ -1,7 +1,7 @@
 #!/bin/env bash
 
 if [ $# -ne 1 ]; then
-  echo "Ingrese un número:"
+  echo "Ingrese el numero de imagenes a generar:"
   read numero
 fi
 
@@ -38,4 +38,4 @@ md5sum imagenes.tar.gz > verificacion.txt
 # Eliminamos el archivo csv
 rm $archivo_nombres
 
-echo "Generación de imágenes completada."
+echo "Se generaron $numero imagenes exitosamente"
