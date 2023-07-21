@@ -3,7 +3,7 @@
 This repository was created with the purpose of creating the project for the practical work of the matter environment
 programming. <br>
 
-## Las tareas a The tasks to complete are the following: son las siguientes:
+## The tasks to complete are the following:
 
 - Design and write a program to process a batch of images, and it has 3 parts:
 
